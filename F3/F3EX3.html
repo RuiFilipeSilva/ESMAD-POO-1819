@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <table>
+                <tr>
+                <th>escola</th>
+                <th>local</th>
+                </tr>
+                <tr>
+                <td>ESMAD</td>
+                <td>Vila do Conde</td>
+                </tr>
+                </table>
+        
+</body>
+<script>
+    const table = document.createElement("table")
+    const tr1 = document.createElement("tr")
+    const th1 = document.createElement("th")
+
+    const th2 = document.createElement("th")
+
+    tr1.appendChild(th1)
+    tr1.appendChild(th2)
+    
+
+    const tr2 = document.createElement("tr")
+    const td1 = document.createElement("td")
+
+    const td2 = document.createElement("td")
+  
+    
+    tr2.appendChild(td1)
+    tr2.appendChild(td2)
+    table.appendChild(tr1)
+    table.appendChild(tr2)
+    document.body.appendChild(table)
+
+    const b = document.createElement("table");
+    b.innerHTML += `<tr><th>Escola</th><th>Local</th></tr><tr><td>ESMAD</td><td>Vila do Conde</td></tr>`;
+    document.body.appendChild(b);
+
+    const tableToEdit = document.querySelector("table")
+    tableToEdit.innerHTML += `<tr><td>ISEP</td><td>Porto</td></tr>`
+
+    const td = document.querySelector("td:last-of-type")
+    td.innerHTML="Vila do Conde/Póvoa do Varzim"
+
+    const parent = document.querySelector("tbody:first-of-type")
+    const child = document.querySelector("tr:first-of-type")
+    parent.removeChild(child);
+
+
+</script>
+</html>
