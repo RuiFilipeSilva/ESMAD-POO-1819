@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EX07</title>
+</head>
+<body>
+    <form>
+        <label for="titulo">Titulo do Filme:</label>
+        <input type="text" id="titulo" required> <br>
+        <label for="genero">Género:</label>
+        <select id="genero" required>
+                <option value="aventura">Aventura</option>
+                <option value="acao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="terror">Terror</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Thriller</option>
+                <option value="outro">Outro</option>
+        </select><br>
+        <label for="year">Ano:</label>
+        <input type="number" min="1900" id="year" required><br>
+        <label for="capa">Capa</label>
+        <input type="url" id="capa" required><br>
+        <label for="trailer">Trailer</label>
+        <input type="url" id="trailer"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Resetar">
+        
+        
+    </form>
+
+    <table>
+
+    </table>
+    <!--Janela para exibir capa do filme-->
+    <dialog id="Cover">
+        <img id="imgCover" src="" alt="">
+        <br>
+        <button id="btnCloseCover">FECHAR</button>
+
+    </dialog>
+
+
+    <script src="ex7.js"></script>
+</body>
+<script>
+
+
+
+</script>
+</html>
